@@ -4,6 +4,12 @@ from tkinter import ttk
 def guardar(*args):
     try:
         print(nombre.get())
+        print(apPaterno.get())
+        print(apMaterno.get())
+        print(correo.get())
+        print(movil.get())
+        print(ocupacion.get())
+        print(estados.get())
     except:
         pass
 
@@ -66,7 +72,7 @@ estados = StringVar()
 
 cmbEstados = ttk.Combobox(marcoPrincipal, textvariable=estados)
 cmbEstados.grid(column=1, row=1)
-cmbEstados['values']=["Aguascalientes", "Zacatecas", "Durango", "Jalisco", "Nayarit", "Mazatlán"]
+cmbEstados['values']=["Aguascalientes", "Baja California", "Baja California Sur", "Campeche", "Chiapas", "Chihuahua", "CDMX", "Coahuila", "Colima", "Durango", "Guanajuato", "Guerrero", "Hidalgo", "Jalisco", "México", "Michoacán", "Morelos", "Nayarit", "Nuevo León", "Oaxaca", "Puebla", "Querétaro", "Quintana Roo", "San Luis Potosí", "Sinaloa", "Sonora", "Tabasco", "Tamaulipas", "Tlaxcala", "Veracruz", "Yucatán", "Zacatecas"]
 
 marcoBotones = ttk.Frame(marcoPrincipal)
 marcoBotones.grid(column=0, row=2)

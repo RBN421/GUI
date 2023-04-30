@@ -20,7 +20,7 @@ def cancelar(*args):
         pass
 
 ventanaRaiz = Tk()
-ventanaRaiz.title("Muestra de Widgets")
+ventanaRaiz.title("Formulario de Muestra de Widgets")
 
 marcoPrincipal = ttk.Frame(ventanaRaiz, padding="10 10 10 10")
 marcoPrincipal.grid(column=0, row=0)
@@ -56,9 +56,9 @@ marcoOcupacion.grid(column=1, row=0)
 
 ocupacion = StringVar()
 
-estudiante = ttk.Radiobutton(marcoOcupacion, text='Estudiante', variable=ocupacion, value='estudiante').grid(column=1, row=0, sticky=(W))
-empleado = ttk.Radiobutton(marcoOcupacion, text='Empleado', variable=ocupacion, value='empleado').grid(column=1, row=1, sticky=(W))
-desempleado = ttk.Radiobutton(marcoOcupacion, text='Desempleado', variable=ocupacion, value='desempleado').grid(column=1, row=2, sticky=(W))
+estudiante = ttk.Radiobutton(marcoOcupacion, text='Estudiante', variable=ocupacion, value='estudiante').grid(column=0, row=0, sticky=(W))
+empleado = ttk.Radiobutton(marcoOcupacion, text='Empleado', variable=ocupacion, value='empleado').grid(column=0, row=1, sticky=(W))
+desempleado = ttk.Radiobutton(marcoOcupacion, text='Desempleado', variable=ocupacion, value='desempleado').grid(column=0, row=2, sticky=(W))
 
 marcoAficiones = ttk.Frame(marcoPrincipal, relief="raised")
 marcoAficiones.grid(column=0, row=1)
